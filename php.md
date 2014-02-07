@@ -1,6 +1,8 @@
 # PHP
 
-## JavaScript variable printing
+## Useful functions
+
+### JavaScript variable printing
 
 Makes for easier debugging when making quick fixes & printing HTML is too messy.
 
