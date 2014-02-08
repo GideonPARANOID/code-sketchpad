@@ -1,6 +1,6 @@
 # Rasberry Pi
 
-As I'm most familiar with Debian-based distros, I usually have my Raspberry Pi set up with [Raspbian]().
+As I'm most familiar with Debian-based distros, I usually have my Raspberry Pi set up with [Raspbian](http://www.raspbian.org/).
 
 ## Ad-hoc Pi
 
