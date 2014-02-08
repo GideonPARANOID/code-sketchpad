@@ -6,7 +6,7 @@ As I'm most familiar with Debian-based distros, I usually have my Raspberry Pi s
 
 Occasionally being without a switch or a screen makes accessing a Raspberry Pi tricky, but not impossible. 
 
-No guarantees this'll work - I'm not a network guy. However, this is what worked when I tried.
+No guarantees this'll work - I'm not a network guy. However, this is what worked when I tried. Advice from [this guide](http://pihw.wordpress.com/guides/direct-network-connection/in-a-nut-shell-direct-network-connection/).
 
 * Append the string to the end of the line on the SD card (this can also be done via another computer with an SD card reader.
 
