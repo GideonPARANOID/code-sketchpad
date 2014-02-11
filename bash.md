@@ -9,7 +9,7 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 
 * `CTRL` + `c` - send a `SIGINT` signal, killing any running task.
 * `CTRL` + `d` - send an `EOF` marker, closing the current shell.
-* `CTRL` + `z` - send a `SIGSTP` signal, suspending the current task. The last suspended job can be resumed with `fg` to run in the foreground or `bg` for the background. Suspended tasks can be found with `jobs` & killed with `kill %<job ID>`.
+* `CTRL` + `z` - send a `SIGSTP` signal, suspending the current task. The last suspended job can be resumed with `fg` to run in the foreground or `bg` for the background. Suspended tasks can be found with `jobs` & killed with `kill %<job id>`.
 * `CTRL` + `s` - stop printing to the terminal, though the program will run in the background.
 * `CTRL` + `q` - resume terminal printing.
 * `CTRL` + `l` - clear the terminal.
@@ -35,8 +35,8 @@ To then create a key for a specific connection, we need to do the following.
 
 The `-r` flag can be used to send file structures.
 
-    scp <local-file> <user>@<hostname>:<remote-path>
-    scp <user>@<hostname>:<remote-file> <local-path>
+    scp <local file> <user>@<hostname>:<remote path>
+    scp <user>@<hostname>:<remote file> <local path>
 
 ## .bashrc
 
@@ -55,7 +55,7 @@ The `-r` flag can be used to send file structures.
     
 ### Adding directories to a $PATH
 
-    export PATH=$PATH:<newdir>
+    export PATH=$PATH:<directory>
 
 
 ## Scripting
