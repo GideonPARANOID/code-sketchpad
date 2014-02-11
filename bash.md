@@ -29,14 +29,14 @@ First, we need to generate a keychain. We can apply a password to it if we like.
     
 To then create a key for a specific connection, we need to do the following.
 
-    ssh-copy-id <user>@<server>
+    ssh-copy-id <user>@<host>
     
 ### Transferring files
 
 The `-r` flag can be used to send file structures.
 
-    scp <local file> <user>@<hostname>:<remote path>
-    scp <user>@<hostname>:<remote file> <local path>
+    scp <local file> <user>@<host>:<remote path>
+    scp <user>@<host>:<remote file> <local path>
 
 ## .bashrc
 
@@ -70,7 +70,7 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 
 ### Make directory structure (makes any missing parents)
 
-    mkdir -p <directory name>
+    mkdir -p <directory>
 
 ### Find IPs on a LAN
 
