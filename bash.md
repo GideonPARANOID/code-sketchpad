@@ -12,6 +12,7 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `CTRL` + `z` - send a `SIGSTP` signal, suspending the current task. The last suspended job can be resumed with `fg` to run in the foreground or `bg` for the background. Suspended tasks can be found with `jobs` & killed with `kill %<job ID>`.
 * `CTRL` + `s` - stop printing to the terminal, though the program will run in the background.
 * `CTRL` + `q` - resume terminal printing.
+* `CTRL` + `l` - clear the terminal.
 
 ### Installing fonts
 
@@ -63,11 +64,15 @@ Bash scripting can be a bit confusing, due to its unusual control structures, bu
 
 The reference/guide I've found so far is found on [The Linux Documentation Project](http://tldp.org/LDP/Bash-Beginners-Guide/html/).
 
-## Messing around
+
+## Other stuff
+
+
+### Make directory structure (makes any missing parents)
+
+    mkdir -p <directory name>
 
 ### Find IPs on a LAN
 
     nmap -sP 192.168.0.0/24 | grep -io '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
-    
-
 
