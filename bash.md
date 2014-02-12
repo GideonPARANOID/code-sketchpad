@@ -64,6 +64,12 @@ Bash scripting can be a bit confusing, due to its unusual control structures, bu
 
 The reference/guide I've found so far is found on [The Linux Documentation Project](http://tldp.org/LDP/Bash-Beginners-Guide/html/).
 
+### String stuff
+
+* `${<variable name>/<search>/<replace>}` - find & replace in the string.
+* `${<variable name>,,}` - converts string to lower case.
+* `${<variable name>##*/}` - chops string down the last subdirectory.
+
 
 ## Other stuff
 
