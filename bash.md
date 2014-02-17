@@ -81,4 +81,8 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 ### Find IPs on a LAN
 
     nmap -sP 192.168.0.0/24 | grep -io '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
+    
+### Find hostname from IP
+
+    nslookup <ip>
 
