@@ -36,3 +36,7 @@ In concordance with my coding style preferrations:
 * `d` - delete text.
 * `p` - paste over selection.
 
+### Undo/redo
+
+* `u` - undo.
+* `CTRL` + `r` - redo.

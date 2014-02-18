@@ -82,7 +82,7 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 
     nmap -sP 192.168.0.0/24 | grep -io '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
     
-### Find hostname from IP
+### Query nameserver
 
     nslookup <ip>
 
