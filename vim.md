@@ -1,6 +1,9 @@
 # Vim
 
 
+[Vim's wiki](http://vim.wikia.com/) is pretty decent.
+
+
 ## .vimrc
 
 
@@ -40,3 +43,24 @@ In concordance with my coding style preferrations:
 
 * `u` - undo.
 * `CTRL` + `r` - redo.
+
+### Substition
+
+The basic command:
+
+    :<context>/<search>/<replace>/<options>
+
+#### Context
+
+* `s` - only act on the current line.
+* `%s` - act on all lines.
+
+#### Options
+
+Combinations of:
+
+* `g` - all occurances in the context (other than just the first).
+* `c` - ask for confirmation for each match.
+* `I` - case sensitivity.
+* `i` - case insenstivity.
+
