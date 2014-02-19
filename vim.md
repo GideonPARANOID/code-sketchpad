@@ -44,7 +44,7 @@ In concordance with my coding style preferrations:
 * `u` - undo.
 * `CTRL` + `r` - redo.
 
-### Substition
+### Search/replace
 
 The basic command:
 
