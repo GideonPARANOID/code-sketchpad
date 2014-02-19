@@ -42,16 +42,30 @@ The `-r` flag can be used to send file structures.
 
 
 ### Command prompt
+
+The colour of the present working directory is dependent on the exit status of the most recently finished task.
     
-    export PS1='[\u@\h]:[\w] '
+    export PS1="[\u@\h]:\[\`if [[ \$? = "0" ]]; then echo '\e[32m[\w]\e[0m'; else echo '\e[31m[\w]\e[0m' ; fi\` "
 
 ### Default switches
 
     alias grep='grep --color=auto'
+    alias lynx='lynx -accept_all_cookies'
 
 ### Typo correction
 
     alias cd..='cd ..'
+    
+### Shortcuts
+
+    alias ls='ls --color=auto'
+    alias l='ls -lhFg'
+    alias lt='ls -lhFg --sort time'
+    alias lygo='lynx google.co.uk' 
+
+### Miscellaneous
+
+    export THEANSWERTOTHEULTIMATEQUESTION=42
     
 ### Adding directories to a $PATH
 
