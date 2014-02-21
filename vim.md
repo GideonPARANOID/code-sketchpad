@@ -23,11 +23,13 @@ In concordance with my coding style preferrations:
 * `ESC` - exit current mode.
 * `i` - insert mode, normal typing.
 
-### Writing files
+### Input/output
 
 * `:w` - write file.
 * `:q` - quit Vim.
 * `:<w|q|wq>!` - force action.
+* `:edit <filename>` - open file.
+* `:new <filename>` - new file.
 
 ### Copy/paste
 
@@ -63,4 +65,13 @@ Combinations of:
 * `c` - ask for confirmation for each match.
 * `I` - case sensitivity.
 * `i` - case insenstivity.
+
+
+### Miscellaneous
+
+
+* `:<line number>` - go to line.
+* `:split` - split the screen horizontally.
+* `:vsplit` - split the screen vertically.
+* `CTRL` + `w` - tab between screens.
 
