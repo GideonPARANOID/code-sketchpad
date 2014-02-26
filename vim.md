@@ -67,11 +67,20 @@ Combinations of:
 * `i` - case insenstivity.
 
 
-### Miscellaneous
+### Running programs from inside Vim
+
+
+    :!<program>
+
+
+To reference the current page, use `%`, an example being `:!wc -l %` to print the line count of the current document.
+
+### Navigation
 
 
 * `:<line number>` - go to line.
 * `:split` - split the screen horizontally.
 * `:vsplit` - split the screen vertically.
 * `CTRL` + `w` - tab between screens.
+* `:e <filename>` - edit a different file.
 
