@@ -16,6 +16,25 @@ The hosts file determines where to look for different URLs, it can be used to ma
 
 This obviously only works with systems using `init.d` as their daemon:
 
-    sudo mv /<filename /etc/init.d/
-    sudo chmod +x /etc/init.d/filename 
-    sudo update-rc.d filename defaults     
+    sudo ln -s <executable filepath> /etc/init.d/<filename>
+    sudo update-rc.d <filename> defaults     
+
+
+## Cron
+
+
+`crontab` is a tool for scheduling tasks, its name is derived from the Greek for time, *chronos*, & the *tab* for table.
+
+* `sudo crontab -l` - view what crontabs are currently running on the system for your user.
+* `sudo crontab -e` - edit the list of tasks.
+
+
+
+## Firewall
+
+
+It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly, uncomplicated firewall). It's pretty easy to configure:
+
+    sudo ufw <allow|deny> <port>
+    sudo service ufw restart
+

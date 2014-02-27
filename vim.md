@@ -92,5 +92,4 @@ To reference the current page, use `%`, an example being `:!wc -l %` to print th
 * `:split` - split the screen horizontally.
 * `:vsplit` - split the screen vertically.
 * `CTRL` + `w` - tab between screens.
-* `:e <filename>` - edit a different file.
 
