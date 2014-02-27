@@ -28,7 +28,7 @@ In concordance with my coding style preferrations:
 * `:w` - write file.
 * `:q` - quit Vim.
 * `:<w|q|wq>!` - force action.
-* `:edit <filename>` - open file.
+* `:e <filename>` - open file.
 * `:new <filename>` - new file.
 
 ### Copy/paste
