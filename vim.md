@@ -12,7 +12,17 @@ In concordance with my coding style preferrations:
     set expandtab
     set tabstop=3
     set shiftwidth=3
+
+General look & feel things - background (I prefer dark terminals) & line numbers.
+
     set background=dark
+
+It's a pain when I get the capitalisation of these wrong, especially when they're not mapped to anything else anyway.
+
+   command WQ wq
+   command Q q
+   command W w
+
 
 
 ## Keyboard shortcuts
