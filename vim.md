@@ -19,9 +19,9 @@ General look & feel things - background (I prefer dark terminals) & line numbers
 
 It's a pain when I get the capitalisation of these wrong, especially when they're not mapped to anything else anyway.
 
-   command WQ wq
-   command Q q
-   command W w
+    command WQ wq
+    command Q q
+    command W w
 
 
 
