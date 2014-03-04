@@ -30,7 +30,7 @@ This obviously only works with systems using `init.d` as their daemon:
 
 ### Format
 
-The format of the `cronjobs` file is a bit odd, but fairly easy once you get your head around them:
+The format of the `cronjobs` file is a bit odd, but fairly easy once you get your head around it:
 
     <minute> <hour> <day of month> <month> <day of week> <job>
 
@@ -38,7 +38,7 @@ The format of the `cronjobs` file is a bit odd, but fairly easy once you get you
 
 The following command is run every 10 minutes of 1am on Friday:
     
-    0/10 1 * * 5 /home/user/script.sh
+    */10 1 * * 5 /home/user/script.sh
 
 The following command is run at quarter to and past every between 9am & 6pm every working weekday:
 
