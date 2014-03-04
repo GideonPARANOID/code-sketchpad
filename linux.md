@@ -28,6 +28,21 @@ This obviously only works with systems using `init.d` as their daemon:
 * `sudo crontab -l` - view what crontabs are currently running on the system for your user.
 * `sudo crontab -e` - edit the list of tasks.
 
+### Format
+
+The format of the `cronjobs` file is a bit odd, but fairly easy once you get your head around them:
+
+    <minute> <hour> <day of month> <month> <day of week> <job>
+
+### Examples
+
+The following command is run every 10 minutes of 1am on Friday:
+    
+    0/10 1 * * 5 /home/user/script.sh
+
+The following command is run at quarter to and past every between 9am & 6pm every working weekday:
+
+    15,45 9-18 * * 0-5 /home/user/script.sh
 
 
 ## Firewall
