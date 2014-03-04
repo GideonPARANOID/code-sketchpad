@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='UTF-8'>
+      <title>Gideon's Code Sketchpad</title>
+      <link rel='stylesheet' href='http://bootswatch.com/cerulean/bootstrap.min.css' />
+      <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+      <script type='text/javascript'>
+
+         $(function() {
+
+            var pages = ['android', 'bash', 'git', 'linux', 'php', 'pi', 'style', 'vim'];
+
+            if (/\?\w+/.test(document.URL) && (pages.indexOf(document.URL.match(/\?(\w+)/)[1]) !== -1)) {               
+               var doc = document.URL.match(/\?(\w+)/)[1];
+
+               $.ajax({
+                  url : doc + '.md',
+                  success : function(data) {
+                     $('title').text($('title').text() + ' - ' + doc.charAt(0).toUpperCase() + doc.slice(1));
+
+                     $('body').append(
+                        $('<xmp />').attr('theme', 'cerulean').hide().text(data),
+                        $('<script />').attr('src', 'http://strapdownjs.com/v/0.2/strapdown.js')
+                     );
+                  }
+               });
+            } else {
+               $('body').append($('<ul />'));
+
+               $.each(pages, function(index, val) {
+                  $('ul').append(
+                     $('<li />').append(
+                        $('<a />').attr('href', './?' + val).text(
+                           val.charAt(0).toUpperCase() + val.slice(1)
+                        )
+                     )
+                  );
+               });
+            }
+         });
+
+      </script>
+   </head>
+   <body />
+</html>
+
