@@ -7,6 +7,7 @@ This is a way of reminding myself of some useful tips & tricks to do with progra
 
 
 * [GitHub](https://github.com/GideonPARANOID/) - where you'll find the source of this sketchpad.
+* [Mirror](http://gideonjon.es/code-sketchpad) - `index.html` serves as making this little project accessible via the web sans GitHub.
 * [Gist](https://gist.github.com/GideonPARANOID/) - I keep a fair bit of reusable code here.
 
 
