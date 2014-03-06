@@ -7,17 +7,18 @@
 ## .vimrc
 
 
-In concordance with my coding style preferrations:
+In concordance with my coding style preferrations & making life a bit easier:
 
     set expandtab
     set tabstop=3
     set shiftwidth=3
+    set autoindent
 
-General look & feel things - background (I prefer dark terminals) & line numbers.
+General look & feel things - background (I prefer dark terminals):
 
     set background=dark
 
-It's a pain when I get the capitalisation of these wrong, especially when they're not mapped to anything else anyway.
+It's a pain when I get the capitalisation of these wrong, especially when they're not mapped to anything else anyway:
 
     command WQ wq
     command Q q
@@ -41,15 +42,27 @@ It's a pain when I get the capitalisation of these wrong, especially when they'r
 * `:e <filename>` - open file.
 * `:new <filename>` - new file.
 
-### Copy/paste
+### Selection
 
 * `v` - visual select mode (selects text as you would expect).
 * `SHIFT` + `v` - visual select line mode (select text by lines).
 * `CTRL` + `v` - visual select block mode (select text in a square/rectangle).
+* `gv` - reselect previously selected block.
+
+You can do a number of things with selected text:
+
+#### Copy/paste
+
 * `c` - cut text.
 * `y` - yank (copy text).
 * `d` - delete text.
 * `p` - paste over selection.
+
+#### Indentation
+
+* `>` - indent.
+* `<` - dedent.
+* `>..` - indents two times.
 
 ### Undo/redo
 
