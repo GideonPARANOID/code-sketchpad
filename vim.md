@@ -51,12 +51,22 @@ It's a pain when I get the capitalisation of these wrong, especially when they'r
 
 You can do a number of things with selected text:
 
-#### Copy/paste
+### Navigation
 
-* `c` - cut text.
-* `y` - yank (copy text).
-* `d` - delete text.
-* `p` - paste over selection.
+* `:<line number>` - go to line.
+* `gg` or `1G` - go to top of the file.
+* `G` - go to the end of the file.
+* `:split` - split the screen horizontally.
+* `:vsplit` - split the screen vertically.
+* `CTRL` + `w` - tab between screens.
+
+### Running programs from inside Vim
+
+
+    :!<program>
+
+
+To reference the current page, use `%`, an example being `:!wc -l %` to print the line count of the current document.
 
 #### Indentation
 
@@ -68,6 +78,13 @@ You can do a number of things with selected text:
 
 * `u` - undo.
 * `CTRL` + `r` - redo.
+
+### Copy/paste
+
+* `c` - cut text.
+* `y` - yank (copy text).
+* `d` - delete text.
+* `p` - paste over selection.
 
 ### Search/replace
 
@@ -89,20 +106,22 @@ Combinations of:
 * `I` - case sensitivity.
 * `i` - case insenstivity.
 
+### Global command
 
-### Running programs from inside Vim
+A very powerful command with a number of different functions:
 
+    :<g|g!>/<pattern>/<option>
 
-    :!<program>
+#### Options
 
+* `d` - delete.
+* `t` - copy.
+* `m` - move.
+* `y` - copy.
 
-To reference the current page, use `%`, an example being `:!wc -l %` to print the line count of the current document.
+#### Examples
 
-### Navigation
-
-
-* `:<line number>` - go to line.
-* `:split` - split the screen horizontally.
-* `:vsplit` - split the screen vertically.
-* `CTRL` + `w` - tab between screens.
+* `:g/^\s*$/d` - deletes every line of whitespace (matches regex).
+* `:g/DEBUG/t$` - copies every line containing 'DEBUG' to the end of the file.
+* `:g!/test/m$` - moves every line that doesn't contain 'test' to the end of the file.
 
