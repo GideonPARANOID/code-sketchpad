@@ -27,11 +27,20 @@ It's a pain when I get the capitalisation of these wrong, especially when they'r
 
 The plugin manager [Pathogen](https://github.com/tpope/vim-pathogen).
 
-    call pathogen#runtime_append_all_bundles()
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
 
 
 ## Plugins
 
+
+With Pathogen, plugins are dead easy to install. Simply:
+
+    cd ~/.vim/bundle/
+    git clone <git repository>
+
+### Personal favourites
 
 * [Pathogen](https://github.com/tpope/vim-pathogen) provides a simple way of installing plugins.
 * [delimitMate](http://www.vim.org/scripts/script.php?script_id=2754) provides automatic closure of parentheses, quotes & brackets.
