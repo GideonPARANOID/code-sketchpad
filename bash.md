@@ -1,7 +1,7 @@
 # Bash
 
 
-## Shell
+## Interactive shell
 
 ### Keyboard shortcuts
 
@@ -14,29 +14,6 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `CTRL` + `q` - resume terminal printing.
 * `CTRL` + `l` - clear the terminal.
 
-### Installing fonts
-
-Move the font to a sensible location where it won't get in the way & then regenerate the font cache.
-
-    mv <font> ~/.fonts
-    fc-cache
-
-### SSH keys
-
-First, we need to generate a keychain. We can apply a password to it if we like.
-
-    ssh-keygen
-    
-To then create a key for a specific connection, we need to do the following.
-
-    ssh-copy-id <user>@<host>
-    
-### Transferring files
-
-The `-r` flag can be used to send file structures.
-
-    scp <local file> <user>@<host>:<remote path>
-    scp <user>@<host>:<remote file> <local path>
 
 ## .bashrc
 
@@ -110,10 +87,32 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 * `${<variable>##*/}` - chops string down the last subdirectory.
 
 
+## Useful commands
 
 
-## Other stuff
+### SSH keys
 
+First, we need to generate a keychain. We can apply a password to it if we like.
+
+    ssh-keygen
+    
+To then create a key for a specific connection, we need to do the following.
+
+    ssh-copy-id <user>@<host>
+    
+### Transferring files
+
+The `-r` flag can be used to send file structures.
+
+    scp <local file> <user>@<host>:<remote path>
+    scp <user>@<host>:<remote file> <local path>
+
+### Installing fonts
+
+Move the font to a sensible location where it won't get in the way & then regenerate the font cache.
+
+    mv <font> ~/.fonts
+    fc-cache
 
 ### Make directory structure (makes any missing parents)
 
@@ -126,4 +125,5 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 ### Query nameserver
 
     nslookup <ip>
+
 
