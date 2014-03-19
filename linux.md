@@ -53,3 +53,7 @@ It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly,
     sudo ufw <allow|deny> <port>
     sudo service ufw restart
 
+
+## User administration
+
+* `chsh -s <shell> <user>` - change the login shell for a user.
