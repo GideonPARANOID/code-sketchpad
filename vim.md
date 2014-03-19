@@ -21,12 +21,32 @@ General look & feel things - background (I prefer dark terminals):
 It's a pain when I get the capitalisation of these wrong, especially when they're not mapped to anything else anyway:
 
     command WQ wq
+    command Wq wq
     command Q q
     command W w
 
+The plugin manager [Pathogen](https://github.com/tpope/vim-pathogen).
+
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
 
 
-## Keyboard shortcuts
+## Plugins
+
+
+With Pathogen, plugins are dead easy to install. Simply:
+
+    cd ~/.vim/bundle/
+    git clone <git repository>
+
+### Personal favourites
+
+* [Pathogen](https://github.com/tpope/vim-pathogen) provides a simple way of installing plugins.
+* [delimitMate](http://www.vim.org/scripts/script.php?script_id=2754) provides automatic closure of parentheses, quotes & brackets.
+
+
+## Control
 
 
 ### Basic stuff
@@ -61,7 +81,7 @@ You can do a number of things with selected text:
 * `CTRL` + `w` - tab between screens.
 * `/<search term>` - go to results, `n` for next, `N` for previous.
 
-### Running programs from inside Vim
+## Running programs from inside Vim
 
 
     :!<program>
@@ -69,7 +89,7 @@ You can do a number of things with selected text:
 
 To reference the current page, use `%`, an example being `:!wc -l %` to print the line count of the current document.
 
-#### Indentation
+### Indentation
 
 * `>` - indent.
 * `<` - dedent.
@@ -79,6 +99,8 @@ To reference the current page, use `%`, an example being `:!wc -l %` to print th
 
 * `u` - undo.
 * `CTRL` + `r` - redo.
+
+## Actions
 
 ### Copy/paste
 
@@ -125,4 +147,5 @@ A very powerful command with a number of different functions:
 * `:g/^\s*$/d` - deletes every line of whitespace (matches regex).
 * `:g/DEBUG/t$` - copies every line containing 'DEBUG' to the end of the file.
 * `:g!/test/m$` - moves every line that doesn't contain 'test' to the end of the file.
+* `:g/<pattern 1>/+1;/<pattern 2>/-1d` - delete everything between two patterns.
 
