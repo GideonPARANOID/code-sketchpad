@@ -108,6 +108,7 @@ To reference the current page, use `%`, an example being `:!wc -l %` to print th
 * `y` - yank (copy text).
 * `d` - delete text.
 * `p` - paste over selection.
+* `:set paste` - paste from clipboard cleanly (`:set nopaste` to exit mode).
 
 ### Search/replace
 
