@@ -82,20 +82,13 @@ You can do a number of things with selected text:
 * `CTRL` + `w` - tab between screens.
 * `/<search term>` - go to results, `n` for next, `N` for previous.
 
-## Running programs from inside Vim
+### Running programs from inside Vim
 
 
     :!<program>
 
 
 To reference the current page, use `%`, an example being `:!wc -l %` to print the line count of the current document.
-
-### Indentation
-
-* `>` - indent.
-* `<` - dedent.
-
-Following either of the above commands with `.`s does the same action again, useful for indenting multiple times.
 
 ### Undo/redo
 
@@ -151,4 +144,13 @@ A very powerful command with a number of different functions:
 * `:g/DEBUG/t$` - copies every line containing 'DEBUG' to the end of the file.
 * `:g!/test/m$` - moves every line that doesn't contain 'test' to the end of the file.
 * `:g/<pattern 1>/+1;/<pattern 2>/-1d` - delete everything between two patterns.
+
+
+### Indentation
+
+* `>` - indent.
+* `<` - dedent.
+
+Following either of the above commands with `.`s does the same action again, useful for indenting multiple times.
+
 
