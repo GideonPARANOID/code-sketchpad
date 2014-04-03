@@ -57,6 +57,7 @@ With Pathogen, plugins are dead easy to install. Simply:
 ### Input/output
 
 * `:w` - write file.
+* `:w <filename>` - write file (continues editing original file).
 * `:q` - quit Vim.
 * `:<w|q|wq>!` - force action.
 * `:e <filename>` - open file.
@@ -93,7 +94,8 @@ To reference the current page, use `%`, an example being `:!wc -l %` to print th
 
 * `>` - indent.
 * `<` - dedent.
-* `>..` - indents two times.
+
+Following either of the above commands with `.`s does the same action again, useful for indenting multiple times.
 
 ### Undo/redo
 
