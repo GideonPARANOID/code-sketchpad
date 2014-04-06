@@ -1,17 +1,6 @@
 # Web
 
 
-## Permissions
-
-
-| Type      | Permissions | chmod | Description                                        |
-| :-------- | :---------: | ----: | :------------------------------------------------- |
-| Directory | `rwxr-xr-x` |   755 | To enter a folder you need executable              |
-| HTML      | `rwxr--r--` |   744 | Only needs to be viewable to the public            |
-| CSS       | `rwxr-xr-x` |   744 | Only needs to be read                              |
-| PHP       | `rwxr--r--` |   744 | Scripts are executed by the server, not the viewer |
-
-
 ## Lighttpd
 
 
