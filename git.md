@@ -12,4 +12,9 @@ Assuming we have a SSH keychain & `xclip` installed.
 
 Then we need to go to [GitHub](https://github.com/settings/ssh) to add the new SSH key to your account & voila, should work.
 
+## Working with Git
+
+### Revert a file
+
+    git checkout <file>
 
