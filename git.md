@@ -2,6 +2,19 @@
 
 ## Setting up
 
+### Starting a new repo
+
+    git init
+    touch README.md
+    git add README.md
+    git commit -m 'intial'
+
+Now we need to make a repo on GitHub, (note, if this is already done, pull from `origin master` before you push).
+
+    git remote add origin <github url>
+    git push origin master
+
+
 ### Using SSH keys
 
 Assuming we have a SSH keychain & `xclip` installed.
