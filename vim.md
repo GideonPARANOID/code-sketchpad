@@ -57,11 +57,11 @@ With Pathogen, plugins are dead easy to install. Simply:
 ### Input/output
 
 * `:w` - write file.
-* `:w <filename>` - write file (continues editing original file).
+* `:w <file>` - write file (continues editing original file).
 * `:q` - quit Vim.
 * `:<w|q|wq>!` - force action.
-* `:e <filename>` - open file.
-* `:new <filename>` - new file.
+* `:e <file>` - open file.
+* `:new <file>` - new file.
 
 ### Selection
 

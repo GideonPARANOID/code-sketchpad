@@ -21,7 +21,7 @@ I tend to use [ClockworkMod](http://www.clockworkmod.com/) as a recovery. It's f
 
 ### Flashing with fastboot
 
-    flash <partition> <filename>
+    flash <partition> <file>
 
 
 ## adb

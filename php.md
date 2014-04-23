@@ -11,7 +11,15 @@ Makes for easier debugging when making quick fixes & printing HTML is too messy.
           . json_encode($var) . ');</script>';
     }
     
-## Other stuff
+## PHP CLI
+
+### Test file syntax
+
+    php -l <file>
+
+### Run code from string
+
+    php -r <string>
 
 ### Built in server
 

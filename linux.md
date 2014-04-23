@@ -16,8 +16,8 @@ The hosts file determines where to look for different URLs, it can be used to ma
 
 This obviously only works with systems using `init.d` as their daemon:
 
-    sudo ln -s <executable filepath> /etc/init.d/<filename>
-    sudo update-rc.d <filename> defaults     
+    sudo ln -s <executable filepath> /etc/init.d/<file>
+    sudo update-rc.d <file> defaults     
 
 
 ## Cron
