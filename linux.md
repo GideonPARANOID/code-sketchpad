@@ -57,3 +57,12 @@ It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly,
 ## User administration
 
 * `chsh -s <shell> <user>` - change the login shell for a user.
+
+
+
+
+## Miscellaneous
+
+### Zipping files
+
+    zip <zip file> <files to zip>
