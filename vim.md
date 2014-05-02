@@ -154,3 +154,6 @@ A very powerful command with a number of different functions:
 Following either of the above commands with `.`s does the same action again, useful for indenting multiple times.
 
 
+## Other
+
+* `:%s/<pattern>//gn` - count matches to pattern in a file.
