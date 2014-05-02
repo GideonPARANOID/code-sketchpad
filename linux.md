@@ -65,4 +65,6 @@ It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly,
 
 ### Zipping files
 
-    zip <zip file> <files to zip>
+    zip [-r] <zip file> <files to zip>
+
+Don't assume recursion.
