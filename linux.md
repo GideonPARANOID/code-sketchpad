@@ -59,8 +59,6 @@ It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly,
 * `chsh -s <shell> <user>` - change the login shell for a user.
 
 
-
-
 ## Miscellaneous
 
 ### Zipping files
@@ -68,4 +66,9 @@ It's sensible to have a firewall. The easiest I've found to use is `ufw` (aptly,
     zip [-r] <file>.zip <files to zip>
 
 Don't assume recursion
-.
+
+### Find
+
+    find [options] -exec <command> \{\} \;
+
+Executes a command on the files found; `{}` represents a file found & the command must end with `;`, both of these must be escaped though.
