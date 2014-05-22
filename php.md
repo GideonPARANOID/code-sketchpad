@@ -10,7 +10,22 @@ Makes for easier debugging when making quick fixes & printing HTML is too messy.
        echo '<script type=\'text/javascript\'>console.log(' 
           . json_encode($var) . ');</script>';
     }
-    
+
+### Heredoc
+
+Useful for embedding HTML particularly, as it allows you maintain indentation.
+
+    echo <<< EOD
+    <string>
+    EOD;
+
+    $var .= <<< EOD
+    <string>
+    EOD;
+
+Note that there should never be any whitespace after the closing marker.
+
+
 ## PHP CLI
 
 ### Test file syntax
