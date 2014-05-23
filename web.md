@@ -6,6 +6,12 @@
 
 Probably the easiest to configure web server ever.
 
+### Prevent access to hidden stuff
+
+    $HTTP["url"] =~ "\/\..*" {
+       url.access-deny = ( "" )
+    }
+
 
 ## Log file monitoring
 
