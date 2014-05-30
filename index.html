@@ -8,8 +8,7 @@
       <script type='text/javascript'>
 
          $(function() {
-
-            var pages = ['android', 'bash', 'git', 'linux', 'php', 'pi', 'style', 'vim', 'web'];
+            var username = 'gideonparanoid', pages = ['android', 'bash', 'git', 'linux', 'php', 'pi', 'style', 'vim', 'web'];
 
             if (/\?\w+/.test(document.URL) && (pages.indexOf(document.URL.match(/\?(\w+)/)[1]) !== -1)) {               
                var doc = document.URL.match(/\?(\w+)/)[1];
@@ -17,31 +16,33 @@
                $.ajax({
                   url : doc + '.md',
                   success : function(data) {
-                     $('title').text($('title').text() + ' - ' + doc.charAt(0).toUpperCase() + doc.slice(1));
+                     $('title').text($('title').text() + ' - ' + doc[0].toUpperCase() + doc.slice(1));
 
-                     $('body').append(
-                        $('<xmp />').attr('theme', 'cerulean').hide().text(data),
-                        $('<script />').attr('src', 'http://strapdownjs.com/v/0.2/strapdown.js')
-                     );
+                     write_page(data);
                   }
                });
-            } else {
-               $('body').append(
-                  $('<ul />'),
-                  $('<a />').attr('href', 'https://github.com/GideonPARANOID/code-sketchpad').text('Find this project on GitHub.')
-               );
 
-               $.each(pages, function(index, val) {
-                  $('ul').append(
-                     $('<li />').append(
-                        $('<a />').attr('href', './?' + val).text(
-                           val.charAt(0).toUpperCase() + val.slice(1)
-                        )
-                     )
-                  );
-               });
+            } else {
+               var data = '# Contents\n';
+
+               for (var i = 0; i < pages.length; i++) {
+                  data += '* [' + pages[i][0].toUpperCase() + pages[i].slice(1) + '](?' + pages[i] + '). \n';
+               }
+
+               write_page(data + '\n[Find this project on GitHub](https://github.com/' + username + '/code-sketchpad).');
             }
          });
+
+         /**
+          * renders the passed string as markdown & styles it as html using a bootstrap theme
+          * @param markdown string
+          */
+         function write_page(data) {
+            $('body').append(
+               $('<xmp />').attr('theme', 'cerulean').hide().text(data),
+               $('<script />').attr('src', 'http://strapdownjs.com/v/0.2/strapdown.js')
+            );
+         }
 
       </script>
    </head>
