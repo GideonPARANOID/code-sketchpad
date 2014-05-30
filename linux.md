@@ -71,4 +71,4 @@ Don't assume recursion
 
     find [options] -exec <command> \{\} \;
 
-Executes a command on the files found; `{}` represents a file found & the command must end with `;`, both of these must be escaped though.
+Executes a command on the files found. `{}` represents a file found & the command must end with `;`, both of these must be escaped though.
