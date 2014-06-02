@@ -16,7 +16,7 @@ The hosts file determines where to look for different URLs, it can be used to ma
 
 This obviously only works with systems using `init.d` as their daemon:
 
-    sudo ln -s <executable filepath> /etc/init.d/<file>
+    sudo ln -s <program path> /etc/init.d/<file>
     sudo update-rc.d <file> defaults     
 
 
@@ -91,3 +91,21 @@ Move the font to a sensible location where it won't get in the way & then regene
 ### Query nameserver
 
     nslookup <ip>
+
+### SSH keys
+
+First, we need to generate a keychain. We can apply a password to it if we like.
+
+    ssh-keygen
+
+To then create a key for a specific connection, we need to do the following.
+
+    ssh-copy-id <user>@<host>
+
+### Transferring files
+
+The `-r` flag can be used to send file structures.
+
+    scp <local file> <user>@<host>:<remote path>
+    scp <user>@<host>:<remote file> <local path>
+

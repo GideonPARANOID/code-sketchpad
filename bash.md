@@ -94,24 +94,9 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 * `${<variable>##*/}` - chops string down the last subdirectory.
 
 
-## Useful commands
+### Iterating through a file
 
 
-### SSH keys
-
-First, we need to generate a keychain. We can apply a password to it if we like.
-
-    ssh-keygen
-    
-To then create a key for a specific connection, we need to do the following.
-
-    ssh-copy-id <user>@<host>
-    
-### Transferring files
-
-The `-r` flag can be used to send file structures.
-
-    scp <local file> <user>@<host>:<remote path>
-    scp <user>@<host>:<remote file> <local path>
-
-
+    while read i; do
+       
+    done < <file>
