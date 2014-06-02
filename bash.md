@@ -14,6 +14,12 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `CTRL` + `q` - resume terminal printing.
 * `CTRL` + `l` - clear the terminal.
 
+## Moving data around
+
+* `$(<program>)` - capture output of program to variable.
+* `<program> &> <file>` - append everything to a file.
+* `<program> 2> <file>` - append errors to a file.
+
 
 ## .bashrc
 
@@ -82,7 +88,8 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
 
 ### String stuff
 
-* `${<variable>/<search>/<replace>}` - find & replace in the string.
+* `${<variable>/<search>/<replace>}` - find & replace in a string.
+* `${<variable>//<search>/<replace>}` - find & replace all matches in a string.
 * `${<variable>,,}` - converts string to lower case.
 * `${<variable>##*/}` - chops string down the last subdirectory.
 
@@ -106,24 +113,5 @@ The `-r` flag can be used to send file structures.
 
     scp <local file> <user>@<host>:<remote path>
     scp <user>@<host>:<remote file> <local path>
-
-### Installing fonts
-
-Move the font to a sensible location where it won't get in the way & then regenerate the font cache.
-
-    mv <font> ~/.fonts
-    fc-cache
-
-### Make directory structure (makes any missing parents)
-
-    mkdir -p <directory>
-
-### Find IPs on a LAN
-
-    nmap -sP 192.168.0.0/24 | grep -io '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
-    
-### Query nameserver
-
-    nslookup <ip>
 
 

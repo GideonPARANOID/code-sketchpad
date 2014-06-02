@@ -72,3 +72,22 @@ Don't assume recursion
     find [options] -exec <command> \{\} \;
 
 Executes a command on the files found. `{}` represents a file found & the command must end with `;`, both of these must be escaped though.
+
+### Installing fonts
+
+Move the font to a sensible location where it won't get in the way & then regenerate the font cache.
+
+    mv <font> ~/.fonts
+    fc-cache
+
+### Make directory structure (makes any missing parents)
+
+    mkdir -p <directory>
+
+### Find IPs on a LAN
+
+    nmap -sP 192.168.0.0/24 | grep -io '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'
+    
+### Query nameserver
+
+    nslookup <ip>
