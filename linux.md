@@ -109,3 +109,10 @@ The `-r` flag can be used to send file structures.
     scp <local file> <user>@<host>:<remote path>
     scp <user>@<host>:<remote file> <local path>
 
+### Copying output to file
+
+    <program> | tee [-a] <file>
+
+Useful for watching output & keeping a copy. The `a` switch denotes appending to the file passed.
+
+
