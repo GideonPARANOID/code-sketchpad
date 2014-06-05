@@ -77,8 +77,8 @@ You can do a number of things with selected text:
 * `:<line number>` - go to line.
 * `gg` or `1G` - go to top of the file.
 * `G` - go to the end of the file.
-* `:split` - split the screen horizontally.
-* `:vsplit` - split the screen vertically.
+* `:spl` - split the screen horizontally.
+* `:vspl` - split the screen vertically.
 * `CTRL` + `w` - tab between screens.
 * `/<search term>` - go to results, `n` for next, `N` for previous.
 
