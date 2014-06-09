@@ -86,6 +86,16 @@ The reference/guide I've found so far is found on [The Linux Documentation Proje
           ;;
     esac
 
+
+#### Function
+
+    test() {
+         
+    }
+
+Functions are called like a program in bash, with arguments afterwards, these can be accessed with `$1` .etc inside the function.
+
+
 ### String stuff
 
 * `${<variable>/<search>/<replace>}` - find & replace in a string.
