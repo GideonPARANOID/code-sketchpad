@@ -21,40 +21,6 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `<program> 2> <file>` - append errors to a file.
 
 
-## .bashrc
-
-
-### Command prompt
-
-The colour of the present working directory is dependent on the exit status of the most recently finished task.
-    
-    export PS1="[\u@\h]:\[\`if [[ \$? = "0" ]]; then echo '\e[32m[\w]\e[0m'; else echo '\e[31m[\w]\e[0m' ; fi\` "
-
-### Default switches
-
-    alias grep='grep --color=auto'
-    alias lynx='lynx -accept_all_cookies'
-
-### Typo correction
-
-    alias cd..='cd ..'
-    
-### Shortcuts
-
-    alias ls='ls --color=auto'
-    alias l='ls -lhFg'
-    alias lt='ls -lhFg --sort time'
-    alias lygo='lynx google.co.uk' 
-
-### Miscellaneous
-
-    export THEANSWERTOTHEULTIMATEQUESTION=42
-    
-### Adding directories to a $PATH
-
-    export PATH=$PATH:<directory>
-
-
 ## Scripting
 
 Bash scripting can be a bit confusing, due to its unusual control structures, but I find it really rewarding. Perhaps because it feels like if you can understand something someone else can't, you feel a bit smug.
@@ -110,3 +76,38 @@ Functions are called like a program in bash, with arguments afterwards, these ca
     while read i; do
        
     done < <file>
+
+
+## .bashrc
+
+
+### Command prompt
+
+The colour of the present working directory is dependent on the exit status of the most recently finished task.
+    
+    export PS1="[\u@\h]:\[\`if [[ \$? = "0" ]]; then echo '\e[32m[\w]\e[0m'; else echo '\e[31m[\w]\e[0m' ; fi\` "
+
+### Default switches
+
+    alias grep='grep --color=auto'
+    alias lynx='lynx -accept_all_cookies'
+
+### Typo correction
+
+    alias cd..='cd ..'
+    
+### Shortcuts
+
+    alias ls='ls --color=auto'
+    alias l='ls -lhFg'
+    alias lt='ls -lhFg --sort time'
+    alias lygo='lynx google.co.uk' 
+
+### Miscellaneous
+
+    export THEANSWERTOTHEULTIMATEQUESTION=42
+    
+### Adding directories to a $PATH
+
+    export PATH=$PATH:<directory>
+
