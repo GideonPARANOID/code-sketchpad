@@ -1,5 +1,9 @@
 # PHP
 
+## General things
+
+In a case where the PHP script itself never prints out anything, do not close the PHP in the document - this prevents headers from being sent in any circumstance.
+
 ## Useful functions
 
 ### JavaScript variable printing
