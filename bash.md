@@ -64,8 +64,9 @@ Functions are called like a program in bash, with arguments afterwards, these ca
 
 ### String stuff
 
-* `${<variable>/<search>/<replace>}` - find & replace in a string.
-* `${<variable>//<search>/<replace>}` - find & replace all matches in a string.
+* `${<variable>/<search>/<replace>}` - find & replace first match (pattern) in a string.
+* `${<variable>//<search>/<replace>}` - find & replace all matches (pattern) in a string.
+* `${<variable>/$'<string>'/<replace>}` - find & replace all matches (string)in a string.
 * `${<variable>,,}` - converts string to lower case.
 * `${<variable>##*/}` - chops string down the last subdirectory.
 
