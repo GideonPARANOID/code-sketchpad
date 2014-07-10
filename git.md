@@ -9,7 +9,7 @@
     git add README.md
     git commit -m 'intial'
 
-Now we need to make a repo on GitHub, (note, if this is already done, pull from `origin master` before you push).
+If we're working with GitHub, we now need to make a repo. Don't choose to initialise the repo with a readme as that can confuse things.
 
     git remote add origin <github url>
     git push origin master
@@ -17,7 +17,7 @@ Now we need to make a repo on GitHub, (note, if this is already done, pull from 
 
 ### Using SSH keys
 
-Assuming we have a SSH keychain & `xclip` installed.
+Assuming we have a generated a SSH keychain & we have `xclip` installed. Note that `xclip` needs an X server, so it can just be done with `cat`, but that's a bit less secure.
 
     git config --global user.name '<name>'
     git config --global user.email '<email>'
