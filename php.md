@@ -25,7 +25,7 @@ Useful for embedding HTML particularly, as it allows you maintain indentation.
     EOD;
 
     $var .= <<< EOD
-    <string>
+    <string>{$other_var}</string>
     EOD;
 
 Note that there should never be any whitespace after the closing marker.
