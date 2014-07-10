@@ -14,6 +14,10 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `CTRL` + `q` - resume terminal printing.
 * `CTRL` + `l` - clear the terminal.
 
+### Other stuff
+
+Many Bash built-ins accept the `--` argument. Using this makes the program process any further arguments as filenames. This is useful to working with files like `--file.png`.
+
 ## Moving data around
 
 * `$(<program>)` - capture output of program to variable.
