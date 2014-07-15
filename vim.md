@@ -81,6 +81,7 @@ You can do a number of things with selected text:
 * `:vspl` - split the screen vertically.
 * `CTRL` + `w` - tab between screens.
 * `/<search term>` - go to results, `n` for next, `N` for previous.
+* `%` - on a brace, move to the end one.
 
 ### Running programs from inside Vim
 
