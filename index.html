@@ -31,9 +31,10 @@
                }
             }).done(function() {
 
+               console.log(/\?\w+/.test(document.URL))
 
                // checking the page is valid
-               if (/\?\w+/.test(document.URL) && pages.indexOf(doc) !== -1) {
+               if (/\?\w+/.test(document.URL) && pages.indexOf(document.URL.match(/\?(\w+)/)[1]) !== -1) {
                   var doc = document.URL.match(/\?(\w+)/)[1];
 
                   // loading page content
