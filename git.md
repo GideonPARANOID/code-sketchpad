@@ -1,5 +1,7 @@
 # Git (with GitHub)
 
+* Remember that you always need to be in the git repository to perform any actions on objects. `git add <repository>/<file>` won't work, for example. 
+
 ## Setting up
 
 ### Starting a new repo
