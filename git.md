@@ -1,4 +1,4 @@
-# Git (with GitHub)
+# Git (with GitHub/Bitbucket)
 
 * Remember that you always need to be in the git repository to perform any actions on objects. `git add <repository>/<file>` won't work, for example. 
 
@@ -11,11 +11,10 @@
     git add README.md
     git commit -m 'intial'
 
-If we're working with GitHub, we now need to make a repo. Don't choose to initialise the repo with a readme as that can confuse things.
+If we're working with GitHub/Bitbucket, we now need to make a repo. Don't choose to initialise the repo with a readme as that can confuse things.
 
-    git remote add origin <github url>
-    git push origin master
-
+    git remote add <remote name> <remote source>
+    git push <remote name> <branch name>
 
 ### Using SSH keys
 
@@ -25,7 +24,7 @@ Assuming we have a generated a SSH keychain & we have `xclip` installed. Note th
     git config --global user.email '<email>'
     xclip -sel clip < ~/.ssh/id_rsa.pub
 
-Then we need to go to [GitHub](https://github.com/settings/ssh) to add the new SSH key to your account & voila, should work.
+Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](https://bitbucket.org/account/user/<userid>/ssh-keys/) to add the new SSH key to your account & voila, should work.
 
 ## Working with Git
 
