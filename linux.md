@@ -115,4 +115,8 @@ The `-r` flag can be used to send file structures.
 
 Useful for watching output & keeping a copy. The `a` switch denotes appending to the file passed.
 
+### Remapping keys
 
+First, we need to figure out the keycodes & actions for keys. `xev` is useful for this. Press whatevr key you want to remap & observe the output to find the keycode & action. We'll plug these into `xmodmap`. A quick example:
+
+    xmodmap -e 'keycode 112 = Home'
