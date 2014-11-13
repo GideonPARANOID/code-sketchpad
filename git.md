@@ -32,8 +32,16 @@ Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](http
 
     git checkout <file>
 
-### Adding git repos within git repos
+## Submodules
 
-For this you use `submodule` instead of clone.
+Submodules are useful for repos which contain repos. 
 
-    git submodule add <git repo url>
+### Adding submodule
+
+    git submodule add <repo>
+
+### Cloning repo with submodules
+
+    git clone <repo>
+    git submodule init
+    git submodule update
