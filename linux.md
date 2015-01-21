@@ -120,3 +120,7 @@ Useful for watching output & keeping a copy. The `a` switch denotes appending to
 First, we need to figure out the keycodes & actions for keys. `xev` is useful for this. Press whatevr key you want to remap & observe the output to find the keycode & action. We'll plug these into `xmodmap`. A quick example:
 
     xmodmap -e 'keycode 112 = Home'
+
+### Running very long processing
+
+If it's copying, you can use `rsync --progress <source> <destination>` to follow file progress, or `gcp`. It's useful when doing very long operations to know when they're done so follow commands with `say 'done'` or if using Gnome `zenity --notification --text='done'`
