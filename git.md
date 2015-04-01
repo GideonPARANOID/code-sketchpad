@@ -45,3 +45,9 @@ Submodules are useful for repos which contain repos.
     git clone <repo>
     git submodule init
     git submodule update
+
+## Branches
+
+### Delete a remote branch
+
+    git push origin :<branch name>
