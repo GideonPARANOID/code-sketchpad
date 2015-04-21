@@ -27,8 +27,22 @@ I tend to use [ClockworkMod](http://www.clockworkmod.com/) as a recovery. It's f
 ## adb
 
 
-Android Developer Bridge is very powerful, with features such as shell access to the device & the ability to run over a network.
+Android Developer Bridge is powerful, with features such as shell access to the device & the ability to run over a network.
+
+### No permissions
+
+This happens when running with a device for the first time on a computer, due to the device not trusting the computer. Running `sudo adb` should fix this.
 
 ### Sending/retrieving files
 
     adb <push|pull> <file>
+
+
+## Monkey
+
+Monkey is a really great UI testing tool which just spams loads of events (including system ones) at a device and particular package for testing reasons.
+
+    adb shell monkey -p <package> -v <number of events>
+
+Use the `--throttle <milliseconds>` switch to slow down operation of Monkey to see what's happening.
+
