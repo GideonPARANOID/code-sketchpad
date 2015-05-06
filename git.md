@@ -14,7 +14,7 @@
 If we're working with GitHub/Bitbucket, we now need to make a repo. Don't choose to initialise the repo with a readme as that can confuse things.
 
     git remote add <remote name> <remote source>
-    git push <remote name> <branch name>
+    git push -u <remote name> <branch name>
 
 ### Using SSH keys
 
@@ -27,6 +27,10 @@ Assuming we have a generated a SSH keychain & we have `xclip` installed. Note th
 Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](https://bitbucket.org/account/user/<userid>/ssh-keys/) to add the new SSH key to your account & voila, should work.
 
 ## Working with Git
+
+### Check if file is tracked
+
+    git ls-files <file>
 
 ### Revert a file
 
