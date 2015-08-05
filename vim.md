@@ -159,3 +159,4 @@ Following either of the above commands with `.`s does the same action again, use
 
 * `:%s/<pattern>//gn` - count matches to pattern in a file.
 * `u` - with selection, turn to lower case.
+* `*` - search for the current word.
