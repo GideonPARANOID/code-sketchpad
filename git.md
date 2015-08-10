@@ -28,6 +28,10 @@ Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](http
 
 ## Working with Git
 
+### Show diff of last commit
+
+    git diff HEAD^ HEAD
+
 ### Check if file is tracked
 
     git ls-files <file>
