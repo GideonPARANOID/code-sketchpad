@@ -59,3 +59,20 @@ Submodules are useful for repos which contain repos.
 ### Delete a remote branch
 
     git push origin :<branch name>
+    
+
+## Rebasing
+
+Basically, rebasing is merging multiple commits down into one.
+
+    git rebase -i 
+    
+You want to squash then the newer commits down into the original one.
+
+## Stashing
+
+If there's files you're working on which you don't want to commit with the currently staged files, stash them.
+
+    git stash
+    
+To see what files are stashed, follow this with `list`, & to stage these stashed files again, use `pop`.
