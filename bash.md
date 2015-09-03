@@ -13,6 +13,7 @@ A fairly exhaustive list can be found on the [Bash Wikipedia page](http://en.wik
 * `CTRL` + `s` - stop printing to the terminal, though the program will run in the background.
 * `CTRL` + `q` - resume terminal printing.
 * `CTRL` + `l` - clear the terminal.
+* `CTRL` + `r` - reverse history search, type something to search through previously ran commands.
 
 ### Other stuff
 
@@ -101,7 +102,7 @@ The colour of the present working directory is dependent on the exit status of t
 
     alias cd..='cd ..'
     
-### Shortcuts
+### Useful shortcuts
 
     alias ls='ls --color=auto'
     alias l='ls -lhFg'
