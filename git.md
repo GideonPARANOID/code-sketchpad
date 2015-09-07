@@ -26,7 +26,20 @@ Assuming we have a generated a SSH keychain & we have `xclip` installed. Note th
 
 Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](https://bitbucket.org/account/user/<userid>/ssh-keys/) to add the new SSH key to your account & voila, should work.
 
-## Working with Git
+
+## Config
+
+### .gitignore
+
+A config file, used for telling git which files to ignore in a repository. It supports wildcards.
+
+### .gitattributes
+
+Another config file, used for telling git some extra rules with various files (including wildcards). For example, the following ensures that bash script files are checked out with UNIX line endings.
+
+    *.sh eol=lf
+
+## Working with git
 
 ### Show diff of last commit
 
@@ -39,6 +52,23 @@ Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](http
 ### Revert a file
 
     git checkout <file>
+    
+### Stashing
+
+If there's files you're working on which you don't want to commit with the currently staged files, stash them.
+
+    git stash
+    
+To see what files are stashed, follow this with `list`, & to stage these stashed files again, use `pop`.
+
+    
+### Rebasing
+
+Basically, rebasing is merging multiple commits down into one. It's useful for patches spanning multiple commits.
+
+    git rebase -i 
+    
+You want to squash then the newer commits down into the original one.
 
 ## Submodules
 
@@ -60,19 +90,3 @@ Submodules are useful for repos which contain repos.
 
     git push origin :<branch name>
     
-
-## Rebasing
-
-Basically, rebasing is merging multiple commits down into one.
-
-    git rebase -i 
-    
-You want to squash then the newer commits down into the original one.
-
-## Stashing
-
-If there's files you're working on which you don't want to commit with the currently staged files, stash them.
-
-    git stash
-    
-To see what files are stashed, follow this with `list`, & to stage these stashed files again, use `pop`.
