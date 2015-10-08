@@ -49,10 +49,6 @@ Another config file, used for telling git some extra rules with various files (i
 
     git ls-files <file>
 
-### Revert a file
-
-    git checkout <file>
-    
 ### Stashing
 
 If there's files you're working on which you don't want to commit with the currently staged files, stash them.
@@ -86,7 +82,14 @@ Submodules are useful for repos which contain repos.
 
 ## Branches
 
+### Checking out
+
+    git checkout <branch>
+
 ### Delete a remote branch
 
     git push origin :<branch name>
     
+## Going back
+
+If something's gone wrong, it can be useful to go back to a point in the repo. To find a point, use  `git reflog` to find the `HEAD` position, & then `git reset --hard HEAD@{<position>}` to reset things.
