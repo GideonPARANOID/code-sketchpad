@@ -66,6 +66,13 @@ Basically, rebasing is merging multiple commits down into one. It's useful for p
     
 You want to squash then the newer commits down into the original one.
 
+### Ignoring locally deleted files
+
+Sometimes when you're working on a repo, you want to clean up but not remove things from version control. Useful for configuration management repositories where not everything is always relevant.
+
+    git ls-files --deleted -z | git update-index --assume-unchanged -z --stdin
+
+
 ## Submodules
 
 Submodules are useful for repos which contain repos. 
