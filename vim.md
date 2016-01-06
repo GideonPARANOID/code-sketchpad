@@ -1,11 +1,8 @@
 # Vim
 
-
 [Vim's wiki](http://vim.wikia.com/) is pretty decent.
 
-
 ## .vimrc
-
 
 In concordance with my coding style preferrations & making life a bit easier:
 
@@ -34,7 +31,6 @@ The plugin manager [Pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Plugins
 
-
 With Pathogen, plugins are dead easy to install. Simply:
 
     cd ~/.vim/bundle/
@@ -45,9 +41,14 @@ With Pathogen, plugins are dead easy to install. Simply:
 * [Pathogen](https://github.com/tpope/vim-pathogen) provides a simple way of installing plugins.
 * [delimitMate](http://www.vim.org/scripts/script.php?script_id=2754) provides automatic closure of parentheses, quotes & brackets.
 
+## Opening options
+
+### Open files as split
+
+* `vim -o <files>` - open files split horizontally.
+* `vim -O <files>` - open files split vertically.
 
 ## Control
-
 
 ### Basic stuff
 
