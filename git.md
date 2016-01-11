@@ -31,7 +31,7 @@ Then we need to go to [GitHub](https://github.com/settings/ssh)/[Bitbucket](http
 
 ### .gitignore
 
-A config file, used for telling git which files to ignore in a repository. It supports wildcards.
+A config file, used for telling git which files to ignore in a repository. It supports wildcards. Can use a global one which is applied across all local git repos for a user, which is handy.
 
 ### .gitattributes
 
@@ -89,13 +89,12 @@ Submodules are useful for repos which contain repos.
 
 ## Branches
 
-### Checking out
+Repos with remotes have a special `<remote name>/<main branch name>` is branch which is the latest version of the code fetched from that source. When making new branches, it's best to split from there.
 
-    git checkout <branch>
-
-### Delete a remote branch
-
-    git push origin :<branch name>
+* `git branch` - see available branches.
+* `git checkout <branch>` - checkout branch.
+* `git checkout -b <branch>` - make new branch.
+* `git branch -D <branch>` - remove branch.
     
 ## Going back
 
