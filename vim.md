@@ -60,6 +60,7 @@ With Pathogen, plugins are dead easy to install. Simply:
 * `:w` - write file.
 * `:w <file>` - write file (continues editing original file).
 * `:q` - quit Vim.
+* `:qa` - quit Vim (closes all splits).
 * `:<w|q|wq>!` - force action.
 * `:e <file>` - open file.
 * `:new <file>` - new file.
